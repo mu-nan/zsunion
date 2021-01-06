@@ -1,7 +1,7 @@
 <template>
-    <div id="app">
-      <router-view></router-view>
-    </div>
+  <div id="app">
+      本期公会数据
+  </div>
 </template>
 
 <script>

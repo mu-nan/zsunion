@@ -1,7 +1,7 @@
 <template>
-    <div id="app">
-      <router-view></router-view>
-    </div>
+  <div id="app">
+      订单消息
+  </div>
 </template>
 
 <script>

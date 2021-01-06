@@ -1,7 +1,7 @@
 <template>
-    <div id="app">
-      <router-view></router-view>
-    </div>
+  <div id="app">
+      设置中心
+  </div>
 </template>
 
 <script>

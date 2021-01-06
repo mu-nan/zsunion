@@ -1,7 +1,7 @@
 <template>
-    <div id="app">
-      <router-view></router-view>
-    </div>
+  <div id="app">
+      公告管理
+  </div>
 </template>
 
 <script>

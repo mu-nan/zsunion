@@ -1,7 +1,7 @@
 <template>
-    <div id="app">
-      <router-view></router-view>
-    </div>
+  <div id="app">
+      网络广告位配置
+  </div>
 </template>
 
 <script>
