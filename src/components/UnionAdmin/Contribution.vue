@@ -54,12 +54,17 @@
       </el-col>
     </el-row>
 
-    <el-table :data="tableData" border stripe>
+    <el-table class="table" :data="tableData" border stripe :header-cell-style="{background:' #EDEDED'}"  >
       <el-table-column prop="uid" label="UID"></el-table-column>
       <el-table-column prop="name" label="昵称"></el-table-column>
       <el-table-column prop="zhuangtai" label="状态"></el-table-column>
       <el-table-column prop="count" label="完成订单数量"></el-table-column>
-      <el-table-column prop="count" label=""></el-table-column>
+      <el-table-column prop="jiedan" label="接单率"></el-table-column>
+      <el-table-column prop="tuidanlv" label="接单退单率"></el-table-column>
+      <el-table-column prop="celCount" label="撤单数量"></el-table-column>
+      <el-table-column prop="cedanlv" label="撤单率"></el-table-column>
+      <el-table-column prop="history" label="订单记录"></el-table-column>
+      <el-table-column prop="addmoney" label="订单总额"></el-table-column>
     </el-table>
     
   </div>
@@ -72,7 +77,17 @@ export default {
       uid: "",
       date: "",
       team: "",
-      tableData:[],
+      tableData:[
+        {uid:123456,name:'王大锤',zhuangtai:'订单进行中',count:'980',jiedan:'90%',tuidanlv:'5%',celCount:'15',cedanlv:'12%',history:'查看',addmoney:'12345元'},
+        {uid:123456,name:'王大锤',zhuangtai:'订单进行中',count:'980',jiedan:'90%',tuidanlv:'5%',celCount:'15',cedanlv:'12%',history:'查看',addmoney:'12345元'},
+        {uid:123456,name:'王大锤',zhuangtai:'订单进行中',count:'980',jiedan:'90%',tuidanlv:'5%',celCount:'15',cedanlv:'12%',history:'查看',addmoney:'12345元'},
+        {uid:123456,name:'王大锤',zhuangtai:'订单进行中',count:'980',jiedan:'90%',tuidanlv:'5%',celCount:'15',cedanlv:'12%',history:'查看',addmoney:'12345元'},
+        {uid:123456,name:'王大锤',zhuangtai:'订单进行中',count:'980',jiedan:'90%',tuidanlv:'5%',celCount:'15',cedanlv:'12%',history:'查看',addmoney:'12345元'},
+        {uid:123456,name:'王大锤',zhuangtai:'订单进行中',count:'980',jiedan:'90%',tuidanlv:'5%',celCount:'15',cedanlv:'12%',history:'查看',addmoney:'12345元'},
+        {uid:123456,name:'王大锤',zhuangtai:'订单进行中',count:'980',jiedan:'90%',tuidanlv:'5%',celCount:'15',cedanlv:'12%',history:'查看',addmoney:'12345元'},
+        {uid:123456,name:'王大锤',zhuangtai:'订单进行中',count:'980',jiedan:'90%',tuidanlv:'5%',celCount:'15',cedanlv:'12%',history:'查看',addmoney:'12345元'},
+        {uid:123456,name:'王大锤',zhuangtai:'订单进行中',count:'980',jiedan:'90%',tuidanlv:'5%',celCount:'15',cedanlv:'12%',history:'查看',addmoney:'12345元'},
+      ],
       options: [
         {
           team: "1",
@@ -126,5 +141,8 @@ export default {
 .money3 {
   background: linear-gradient(90deg, #a36dc5 0%, #8865d1 100%);
   border-radius: 8px;
+}
+.table{
+  margin-top: 25px;
 }
 </style>
